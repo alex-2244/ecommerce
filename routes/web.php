@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'FrontEndController@index');
+Route::get('/product/{id}', [
+	'uses' => 'FrontEndController@singleProduct',
+	'as' => 'product.single'
+]);
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('products', 'ProductsController');

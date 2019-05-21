@@ -290,3 +290,30 @@ img {
     font-size: 15px;
     text-align: center;
 }
+nav.navigation {
+    margin: 20px auto;width: 100%;position: relative;max-width: 770px;text-align: center;
+}
+nav.navigation a {
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    margin: 0 12px 0 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    color: #acacac;
+    font-size: 20px;
+    border-radius: 100%;
+    transition: all .3s ease;
+}
+.navigation a.bg-border-color.current {
+    background-color: transparent;
+}
+.navigation a.current {
+    border-color: #4cc2c0;
+    background-color: transparent;
+    color: #4cc2c0;
+}
