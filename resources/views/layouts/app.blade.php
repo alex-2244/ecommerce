@@ -257,9 +257,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('shop.index') }}"><i class="fa fa-fw fa-shopping-cart"></i>Shopping</a>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ecomm.index') }}"><i class="fa fa-fw fa-shopping-cart"></i>E-comm</a>
-                        </li>
                       </ul>
                     </div>
                   </nav>

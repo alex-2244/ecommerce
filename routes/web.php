@@ -12,34 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
-
 Route::resource('products', 'ProductsController');
-
-
 Route::get('/shop', [
 	'uses' => 'ShopsController@index',
 	'as' => 'shop.index'
 ]);
-
-
 Route::get('/cartPage', [
 	'uses' => 'ShopsController@cartView',
 	'as' => 'shop.cartPage'
 ]);
-
 Route::get('/add-to-cart/{id}', [
 	'uses' => 'ShopsController@addToCart',
 	'as' => 'shop.addToCart'
 ]);
 
-Route::get('/ecomm', [
-	'uses' => 'FrontEndController@ecomm',
-	'as' => 'ecomm.index'
-]);
+
+
+
+
