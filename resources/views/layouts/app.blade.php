@@ -122,9 +122,9 @@
                     @endif
                   @else
                     <li class="nav-item">
-                        <a class="nav-link" style="color:black !important;" href="{{route('shop.cartPage')}}">
+                        <a class="nav-link" style="color:black !important;" href="">
                             <span> <i class="fas fa-fw fa-shopping-cart"></i> </span>&nbsp;Cart
-                            <span class="badge badge-pill badge-light">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
+                            {{-- <span class="badge badge-pill badge-light">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span> --}}
                         </a>
                     </li>
                       <li class="nav-item dropdown">
@@ -255,7 +255,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('shop.index') }}"><i class="fa fa-fw fa-shopping-cart"></i>Shopping</a>
+                            <a class="nav-link" href="{{ route('shop.view') }}"><i class="fa fa-fw fa-shopping-cart"></i>Shopping</a>
                         </li>
                       </ul>
                     </div>

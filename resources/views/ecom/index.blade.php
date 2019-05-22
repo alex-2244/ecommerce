@@ -31,7 +31,7 @@
               </div>
               <div class="row pb120">
                   <div class="col-lg-12">
-                      {{-- {{ $products->appends('sort' , 'votes')->links() }} --}}
+                      
                       {{ $products->links() }}
                   </div>
                   {{-- <div class="col-lg-12">

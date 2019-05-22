@@ -17,6 +17,8 @@
     <!--Styles for RTL-->
     <!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
     <!--External fonts-->
+     <!--fas fa icon link -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <style>
         /* nav.navigation {
@@ -54,6 +56,9 @@
     <div class="container">
         <div class="header-content-wrapper">
             <ul class="nav-add">
+                <li class="cart" style="margin-right:20px;">
+                    <a href="{{ route('home') }}"> <i class="fas fa-home" style="font-size: 16px;"></i> Home</a>
+                </li>
                 <li class="cart">
                     <a href="#" class="js-cart-animate">
                         <i class="seoicon-basket"></i>

@@ -12,25 +12,41 @@
 */
 
 Route::get('/', 'FrontEndController@index');
+Route::get('/shopping', [
+	'uses' => 'FrontEndController@shopView',
+	'as' => 'shop.view'
+]);
+
 Route::get('/product/{id}', [
 	'uses' => 'FrontEndController@singleProduct',
 	'as' => 'product.single'
 ]);
+
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('products', 'ProductsController');
-Route::get('/shop', [
-	'uses' => 'ShopsController@index',
-	'as' => 'shop.index'
+
+Route::post('/cart/add', [
+	'uses' => 'ShoppingController@addToCart',
+	'as' => 'cart.add'
 ]);
-Route::get('/cartPage', [
-	'uses' => 'ShopsController@cartView',
-	'as' => 'shop.cartPage'
+Route::get('/cart', [
+	'uses' => 'ShoppingController@cart',
+	'as' => 'cart'
 ]);
-Route::get('/add-to-cart/{id}', [
-	'uses' => 'ShopsController@addToCart',
-	'as' => 'shop.addToCart'
-]);
+
+// Route::get('/shop', [
+// 	'uses' => 'ShopsController@index',
+// 	'as' => 'shop.index'
+// ]);
+// Route::get('/cartPage', [
+// 	'uses' => 'ShopsController@cartView',
+// 	'as' => 'shop.cartPage'
+// ]);
+// Route::get('/add-to-cart/{id}', [
+// 	'uses' => 'ShopsController@addToCart',
+// 	'as' => 'shop.addToCart'
+// ]);
 
 
 
