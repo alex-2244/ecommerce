@@ -71,7 +71,7 @@ var CRUMINA = {};
                 jQuery(this).waypoint(function () {
                     $(this.element).find('span').countTo();
                     this.destroy();
-                }, {offset: '95%'});
+                }, { offset: '95%' });
             });
         }
     };
@@ -86,7 +86,7 @@ var CRUMINA = {};
                     $(this.element).find('.count-animate').countTo();
                     $(this.element).find('.skills-item-meter-active').fadeTo(300, 1).addClass('skills-animate');
                     this.destroy();
-                }, {offset: '90%'});
+                }, { offset: '90%' });
             });
         }
     };
@@ -121,7 +121,7 @@ var CRUMINA = {};
                     });
                     this.destroy();
 
-                }, {offset: '90%'});
+                }, { offset: '90%' });
             });
         }
     };
@@ -135,7 +135,7 @@ var CRUMINA = {};
                     var mySVG = $(this.element).find('> svg').drawsvg();
                     mySVG.drawsvg('animate');
                     this.destroy();
-                }, {offset: '95%'});
+                }, { offset: '95%' });
             });
         }
     };
@@ -208,18 +208,18 @@ var CRUMINA = {};
      * ---------------------------*/
     CRUMINA.SubscribeScrollAnnimation = function () {
         var controller = new ScrollMagic.Controller();
-        new ScrollMagic.Scene({triggerElement: ".subscribe"})
-            .setVelocity(".gear", {opacity: 1, rotateZ: "360deg"}, 1200)
+        new ScrollMagic.Scene({ triggerElement: ".subscribe" })
+            .setVelocity(".gear", { opacity: 1, rotateZ: "360deg" }, 1200)
             .triggerHook("onEnter")
             .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: ".subscribe"})
-            .setVelocity(".mail", {opacity: 1, bottom: "0"}, 600)
+        new ScrollMagic.Scene({ triggerElement: ".subscribe" })
+            .setVelocity(".mail", { opacity: 1, bottom: "0" }, 600)
             .triggerHook(0.8)
             .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: ".subscribe"})
-            .setVelocity(".mail-2", {opacity: 1, right: "20"}, 800)
+        new ScrollMagic.Scene({ triggerElement: ".subscribe" })
+            .setVelocity(".mail-2", { opacity: 1, right: "20" }, 800)
             .triggerHook(0.9)
             .addTo(controller);
     };
@@ -227,18 +227,18 @@ var CRUMINA = {};
     CRUMINA.SeoScoreScrollAnnimation = function () {
         var controller = new ScrollMagic.Controller();
 
-        new ScrollMagic.Scene({triggerElement: ".seo-score"})
-            .setVelocity(".seo-score .images img:first-of-type", {opacity: 1, top: "-10"}, 400)
+        new ScrollMagic.Scene({ triggerElement: ".seo-score" })
+            .setVelocity(".seo-score .images img:first-of-type", { opacity: 1, top: "-10" }, 400)
             .triggerHook("onEnter")
             .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: ".seo-score"})
-            .setVelocity(".seo-score .images img:nth-child(2)", {opacity: 1, bottom: "0"}, 800)
+        new ScrollMagic.Scene({ triggerElement: ".seo-score" })
+            .setVelocity(".seo-score .images img:nth-child(2)", { opacity: 1, bottom: "0" }, 800)
             .triggerHook(0.7)
             .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: ".seo-score"})
-            .setVelocity(".seo-score .images img:last-child", {opacity: 1, bottom: "0"}, 1000)
+        new ScrollMagic.Scene({ triggerElement: ".seo-score" })
+            .setVelocity(".seo-score .images img:last-child", { opacity: 1, bottom: "0" }, 1000)
             .triggerHook(0.8)
             .addTo(controller);
     };
@@ -246,13 +246,13 @@ var CRUMINA = {};
     CRUMINA.TestimonialScrollAnnimation = function () {
         var controller = new ScrollMagic.Controller();
 
-        new ScrollMagic.Scene({triggerElement: ".testimonial-slider"})
-            .setVelocity(".testimonial-slider .testimonial-img", {opacity: 1, bottom: "-50"}, 400)
+        new ScrollMagic.Scene({ triggerElement: ".testimonial-slider" })
+            .setVelocity(".testimonial-slider .testimonial-img", { opacity: 1, bottom: "-50" }, 400)
             .triggerHook(0.6)
             .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: ".testimonial-slider"})
-            .setVelocity(".testimonial-slider .testimonial__thumb-img", {opacity: 1, top: "-100"}, 600)
+        new ScrollMagic.Scene({ triggerElement: ".testimonial-slider" })
+            .setVelocity(".testimonial-slider .testimonial__thumb-img", { opacity: 1, top: "-100" }, 600)
             .triggerHook(1)
             .addTo(controller);
     };
@@ -260,13 +260,13 @@ var CRUMINA = {};
     CRUMINA.OurVisionScrollAnnimation = function () {
         var controller = new ScrollMagic.Controller();
 
-        new ScrollMagic.Scene({triggerElement: ".our-vision"})
-            .setVelocity(".our-vision .elements", {opacity: 1}, 600)
+        new ScrollMagic.Scene({ triggerElement: ".our-vision" })
+            .setVelocity(".our-vision .elements", { opacity: 1 }, 600)
             .triggerHook(0.6)
             .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: ".our-vision"})
-            .setVelocity(".our-vision .eye", {opacity: 1, bottom: "-90"}, 1000)
+        new ScrollMagic.Scene({ triggerElement: ".our-vision" })
+            .setVelocity(".our-vision .eye", { opacity: 1, bottom: "-90" }, 1000)
             .triggerHook(1)
             .addTo(controller);
     };
@@ -274,13 +274,13 @@ var CRUMINA = {};
     CRUMINA.MountainsScrollAnnimation = function () {
         var controller = new ScrollMagic.Controller();
 
-        new ScrollMagic.Scene({triggerElement: ".background-mountains"})
-            .setVelocity(".images img:first-child", {opacity: 1, bottom: "0", paddingBottom: "10%"}, 800)
+        new ScrollMagic.Scene({ triggerElement: ".background-mountains" })
+            .setVelocity(".images img:first-child", { opacity: 1, bottom: "0", paddingBottom: "10%" }, 800)
             .triggerHook(0.4)
             .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: ".background-mountains"})
-            .setVelocity(".images img:last-child", {opacity: 1, bottom: "0"}, 800)
+        new ScrollMagic.Scene({ triggerElement: ".background-mountains" })
+            .setVelocity(".images img:last-child", { opacity: 1, bottom: "0" }, 800)
             .triggerHook(0.3)
             .addTo(controller);
     };
@@ -311,7 +311,7 @@ var CRUMINA = {};
                 $(this).addClass('active');
                 var filterValue = $(this).data('filter');
                 if (typeof filterValue != "undefined") {
-                    $current.isotope({filter: filterValue});
+                    $current.isotope({ filter: filterValue });
                     return false;
                 }
             });
@@ -341,7 +341,7 @@ var CRUMINA = {};
                 $scrollDirection = ($t.data('direction')) ? $t.data('direction') : 'horizontal',
                 $mouseScroll = ($t.data('mouse-scroll')) ? $t.data('mouse-scroll') : false,
                 $autoplay = ($t.data('autoplay')) ? parseInt($t.data('autoplay'), 10) : 0,
-                $autoheight = ($t.hasClass('auto-height')) ? true: false,
+                $autoheight = ($t.hasClass('auto-height')) ? true : false,
                 $slidesSpace = ($showItems > 1) ? 20 : 0;
 
             if ($showItems > 1) {
@@ -611,13 +611,13 @@ var CRUMINA = {};
     });
 
 
-    $('.quantity-plus').on('click', function () {
+    $('.quantity-plus-d').on('click', function () {
         var val = parseInt($(this).prev('input').val());
         $(this).prev('input').val(val + 1).change();
         return false;
     });
 
-    $('.quantity-minus').on('click', function () {
+    $('.quantity-minus-d').on('click', function () {
         var val = parseInt($(this).next('input').val());
         if (val !== 1) {
             $(this).next('input').val(val - 1).change();
