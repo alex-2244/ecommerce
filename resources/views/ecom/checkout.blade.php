@@ -60,7 +60,7 @@
 							</td>
 
 							<td class="product-subtotal">
-								<h5 class="total amount">${{ Cart::total() }}</h5>
+								<h5 class="total amount">${{ number_format(Cart::total()) }}</h5>
 							</td>
 						</tr>
 
@@ -84,17 +84,17 @@
 							</a>
 							
 							<span style="float: right;">
-								<form action="/your-server-side-code" method="POST">
-									  <script
-									    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-									    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-									    data-amount="999"
-									    data-name="Stripe.com"
-									    data-description="Widget"
-									    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-									    data-locale="auto"
-									    data-zip-code="true">
-									  </script>
+								<form action="{{ route('cart.check') }}" method="POST">
+									@csrf
+									<script
+										src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+										data-key="pk_test_SSaSEvQjgdrxFxL8uoDLbqrh001LnV3xVL"
+										data-amount="{{ Cart::total() * 100 }}"
+										data-name="Alex"
+										data-description="Test purchase"
+										data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+										data-locale="auto">
+									</script>
 								</form>
 							</span>
 						</div>
